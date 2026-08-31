@@ -1,0 +1,26 @@
+{"id": "s01", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-qos"], "question": "高频激光点云发布该选哪种可靠性，可靠投递还是尽力而为？"}
+{"id": "s02", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-qos"], "question": "订阅方默认要可靠传输，发布端却用尽力而为，两边还能对上吗？"}
+{"id": "s03", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-tf"], "question": "map、odom、base_link 这三层坐标通常分别由哪类节点往外发？"}
+{"id": "s04", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-nodes"], "question": "托管节点为何把硬件自检放在未激活态，而不是进程一起来就开设备？"}
+{"id": "s05", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["colcon"], "question": "编完工作空间后如果不 source 安装空间的 setup，运行时会怎样？"}
+{"id": "s06", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-launch"], "question": "仿真器和真车对模拟时钟开关分别应设成什么？"}
+{"id": "s07", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-topics"], "question": "给整车加了前缀之后，话题字符串一般如何变化？"}
+{"id": "s08", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-services", "ros2-doc-actions"], "question": "会跑很久的远程调用为什么不该塞进一对一请求的处理函数？"}
+{"id": "s09", "type": "single", "user": "intern", "expected_behavior": "answer", "expected_doc_ids": ["colcon"], "question": "新人工作空间里源码、编译产物、安装空间分别对应哪些目录名？"}
+{"id": "s10", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["troubleshooting"], "question": "命令行列不出任何 topic 时，现场优先核哪几项？"}
+{"id": "m01", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["multimachine", "ros2-qos"], "question": "两台车连上以后雷达点云晃，要从发现域和传输质量两边查什么？"}
+{"id": "m02", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["nav2", "ros2-tf"], "question": "规划器报没有合法路径时，为何先核对定位到里程计的坐标树？"}
+{"id": "m03", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["multimachine", "ros2-tf"], "question": "多机拼点云但时钟没对准，坐标查询会怎样失败？"}
+{"id": "m04", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["nav2", "ros2-qos"], "question": "导航代价层订阅不到激光扫描，除名字外还要核对发布订阅是否同一套策略？"}
+{"id": "h01", "type": "single", "user": "hr", "expected_behavior": "answer", "expected_doc_ids": ["hr-onboarding"], "question": "新来的实习生日当天能不能开生产跳板？"}
+{"id": "s11", "type": "single", "user": "ops", "expected_behavior": "answer", "expected_doc_ids": ["prod-deploy"], "question": "生产单播发现那两个 peer 的 IP 和端口写的是多少？"}
+{"id": "s12", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-nodes"], "question": "激光回调和控制写在同一进程时为何多用多线程执行器？"}
+{"id": "s13", "type": "single", "user": "intern", "expected_behavior": "answer", "expected_doc_ids": ["troubleshooting"], "question": "Could not transform 这类报错优先看时间戳还是静态坐标？"}
+{"id": "m05", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-topics", "ros2-launch"], "question": "launch 里推了前缀后，echo 时该敲带前缀的名字还是裸名？"}
+{"id": "s14", "type": "single", "user": "ops", "expected_behavior": "answer", "expected_doc_ids": ["sros2"], "question": "打开安全中间件要设哪两个环境变量？"}
+{"id": "s15", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["nav2"], "question": "导航恢复行为应写在行为树里还是业务节点自造状态机？"}
+{"id": "p01", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-actions"], "question": "action 相对普通请求响应，额外提供进度和哪类能力？"}
+{"id": "p02", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-rmw"], "question": "发行版二进制默认带的是哪家 DDS 实现？"}
+{"id": "p03", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-logging"], "question": "日志除了终端和文件，网上默认发到哪条 topic？"}
+{"id": "p04", "type": "single", "user": "intern", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-composition"], "question": "composition 的组件是独立可执行文件，还是给容器 load 的动态库？"}
+{"id": "p05", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-topic-stats"], "question": "打开订阅统计后，度量默认发到哪条 topic？"}

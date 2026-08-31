@@ -1,0 +1,38 @@
+{"id": "s01", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-qos"], "expected_keypoints": ["BEST_EFFORT", "高频"], "question": "ROS 2 里激光雷达这类高频传感器应该用 RELIABLE 还是 BEST_EFFORT？"}
+{"id": "s02", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-qos"], "expected_keypoints": ["匹配失败|没数据", "BEST_EFFORT"], "question": "订阅端默认 RELIABLE 时，驱动若发布 BEST_EFFORT 会出现什么现象？"}
+{"id": "s03", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-tf"], "expected_keypoints": ["map", "odom", "base_link"], "question": "常见的 TF 链 map、odom、base_link 各自应由谁发布？"}
+{"id": "s04", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-nodes"], "expected_keypoints": ["Inactive", "自检"], "question": "Managed Node 为什么建议在 Inactive 阶段做硬件自检而不是一启动就开设备？"}
+{"id": "s05", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["colcon"], "expected_keypoints": ["source", "setup.bash"], "question": "colcon 工作空间编译后为什么还要 source install/setup.bash？"}
+{"id": "s06", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-launch"], "expected_keypoints": ["use_sim_time", "仿真", "实车"], "question": "仿真和实车在 use_sim_time 上应如何设置？"}
+{"id": "s07", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-topics"], "expected_keypoints": ["命名空间"], "question": "给机器人加命名空间后，话题名通常会变成什么形式？"}
+{"id": "s08", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-services", "ros2-doc-actions"], "expected_keypoints": ["Action", "反馈"], "question": "长时间任务为什么不要写在服务回调里而要用 Action？"}
+{"id": "s09", "type": "single", "user": "intern", "expected_behavior": "answer", "expected_doc_ids": ["colcon"], "expected_keypoints": ["src", "build", "install"], "question": "实习生编译工作空间的标准目录结构是什么？"}
+{"id": "s10", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["troubleshooting"], "expected_keypoints": ["source", "ROS_DOMAIN_ID", "QoS"], "question": "ros2 topic 列表为空时，应先检查哪几项？"}
+{"id": "m01", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["multimachine", "ros2-qos"], "expected_keypoints": ["DOMAIN_ID", "QoS"], "question": "两台机器人组网后激光点云抖动，应同时核对哪两类配置？"}
+{"id": "m02", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["nav2", "ros2-tf"], "expected_keypoints": ["map", "odom"], "question": "Nav2 报 No valid path 时，为什么要先看 map 到 odom 的 TF 而不是先换规划器插件？"}
+{"id": "m03", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["multimachine", "ros2-tf"], "expected_keypoints": ["lookup", "时钟"], "question": "多机点云融合时时间不同步，会在 TF 上表现成什么问题？"}
+{"id": "m04", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["nav2", "ros2-qos"], "expected_keypoints": ["QoS", "scan"], "question": "Nav2 代价地图收不到 scan 时，除了话题名还要检查什么通信策略？"}
+{"id": "u01", "type": "unanswerable", "user": "engineer", "expected_behavior": "refuse_no_evidence", "expected_doc_ids": [], "question": "公司食堂今天的菜单是什么？"}
+{"id": "u02", "type": "unanswerable", "user": "engineer", "expected_behavior": "refuse_no_evidence", "expected_doc_ids": [], "question": "财务部差旅报销单的最新模板下载地址是什么？"}
+{"id": "u03", "type": "unanswerable", "user": "engineer", "expected_behavior": "refuse_no_evidence", "expected_doc_ids": [], "question": "这台车 IMU 的出厂标定文件下载链接是什么？"}
+{"id": "a01", "type": "acl_denied", "user": "intern", "expected_behavior": "refuse_acl", "expected_doc_ids": [], "question": "生产环境 DDS 的发现端口和密钥文件放在哪？"}
+{"id": "a02", "type": "acl_denied", "user": "hr", "expected_behavior": "refuse_acl", "expected_doc_ids": [], "question": "SROS2 生产 keystore 的路径是什么？"}
+{"id": "a03", "type": "acl_denied", "user": "engineer", "expected_behavior": "refuse_acl", "expected_doc_ids": [], "question": "生产跳板机主机名和抓包日志路径是什么？"}
+{"id": "a04", "type": "acl_denied", "user": "intern", "expected_behavior": "refuse_acl", "expected_doc_ids": [], "question": "ops 轮换 PKI 的脚本名称和周期是什么？"}
+{"id": "e01", "type": "expired", "user": "engineer", "expected_behavior": "refuse_expired", "expected_doc_ids": ["ros1-migration"], "question": "现在还可以用 ros1_bridge 同时跑 ROS 1 和 ROS 2 做过渡吗？"}
+{"id": "e02", "type": "expired", "user": "engineer", "expected_behavior": "refuse_expired", "expected_doc_ids": ["ros1-migration"], "question": "工控机上同时运行 Noetic 与 Humble 并通过桥接 /cmd_vel 是否仍是现行标准？"}
+{"id": "h01", "type": "single", "user": "hr", "expected_behavior": "answer", "expected_doc_ids": ["hr-onboarding"], "expected_keypoints": ["跳板机"], "question": "实习生入职第一天能否开通生产跳板机权限？"}
+{"id": "h02", "type": "acl_denied", "user": "engineer", "expected_behavior": "refuse_acl", "expected_doc_ids": [], "question": "实习生门禁和域账号开通流程谁负责？"}
+{"id": "s11", "type": "single", "user": "ops", "expected_behavior": "answer", "expected_doc_ids": ["prod-deploy"], "expected_keypoints": ["10.8.0.12", "7412"], "question": "生产 Fast DDS 单播发现应使用哪两个地址端口？"}
+{"id": "s12", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-nodes"], "expected_keypoints": ["MultiThreadedExecutor"], "question": "激光与控制同进程时为什么倾向 MultiThreadedExecutor？"}
+{"id": "s13", "type": "single", "user": "intern", "expected_behavior": "answer", "expected_doc_ids": ["troubleshooting"], "expected_keypoints": ["时间戳", "use_sim_time"], "question": "Could not transform 这类 TF 报错通常先查什么？"}
+{"id": "m05", "type": "multi_hop", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-topics", "ros2-launch"], "expected_keypoints": ["命名空间"], "question": "用 PushRosNamespace 之后，调试 echo 时话题名要注意什么？"}
+{"id": "u04", "type": "unanswerable", "user": "ops", "expected_behavior": "refuse_no_evidence", "expected_doc_ids": [], "question": "下季度采购的激光雷达型号选型结论写在哪份纪要里？"}
+{"id": "s14", "type": "single", "user": "ops", "expected_behavior": "answer", "expected_doc_ids": ["sros2"], "expected_keypoints": ["ROS_SECURITY_ENABLE", "ROS_SECURITY_KEYSTORE"], "question": "生产镜像用哪两个环境变量启用 SROS2？"}
+{"id": "s15", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["nav2"], "expected_keypoints": ["recovery"], "question": "Nav2 的 recovery 应该放在哪里实现，而不是业务节点另写状态机？"}
+{"id": "a05", "type": "acl_denied", "user": "hr", "expected_behavior": "refuse_acl", "expected_doc_ids": [], "question": "ROS_DOMAIN_ID 冲突时多机器人 TF 会怎样？"}
+{"id": "p01", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-actions"], "expected_keypoints": ["feedback|反馈", "cancel|取消"], "question": "ROS 2 的 action 和普通 service 比，多了哪两类能力？"}
+{"id": "p02", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-rmw"], "expected_keypoints": ["Fast DDS"], "question": "ROS 2 二进制发行版默认的 RMW 实现是哪一个？"}
+{"id": "p03", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-logging"], "expected_keypoints": ["/rosout"], "question": "ROS 2 日志默认会发到网络上的哪个话题？"}
+{"id": "p04", "type": "single", "user": "intern", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-composition"], "expected_keypoints": ["shared library|共享库"], "question": "ROS 2 composition 里组件是编译成可执行文件还是由容器加载的共享库？"}
+{"id": "p05", "type": "single", "user": "engineer", "expected_behavior": "answer", "expected_doc_ids": ["ros2-doc-topic-stats"], "expected_keypoints": ["/statistics"], "question": "打开 Topic Statistics 后，统计默认发到哪个话题？"}
