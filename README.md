@@ -140,7 +140,7 @@ python -m rag eval --ragas
 | Non-LLM Context P/R | Ragas，命中子块 vs 参考文档子块（RapidFuzz，阈值 0.4） |
 | Faithfulness | Ragas，回答中的断言能否被检索上下文支持（需 `EVAL_*` 或 `OPENAI_*` 裁判） |
 
-当前 38 题 / M3E 对照见 [docs/eval-m3e-n38.md](docs/eval-m3e-n38.md)。更早的哈希基线（仅内部 14 篇）见 [docs/eval-hash-baseline.md](docs/eval-hash-baseline.md)，不要和现在的块数、时延混用。
+当前 38 题 / M3E 对照见 [docs/eval-m3e-n38.md](docs/eval-m3e-n38.md)。更早的哈希基线（仅内部 14 篇）见 [docs/eval-hash-baseline.md](docs/eval-hash-baseline.md)，不和现在的块数、时延混用。
 
 ## 目录
 
